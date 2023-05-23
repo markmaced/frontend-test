@@ -58,6 +58,8 @@ Queremos que você crie um catálogo de famílias (blocos 3D), onde a paginaçã
 
 📜 Não é obrigatório que seja responsivo, mas se for, você ganhará pontos extras conosco!
 
+📜 Não é obrigatório que faça deploy, mas se fazer, você ganhará pontos extras conosco!
+
 Link para o Figma: 🎨
 
 https://www.figma.com/file/xUT0pnECiRfxxaHGj1yaqh/%5BBLOCKS%5D-%5BTESTE-FRONT-END%5D?type=design&node-id=0%3A1&t=SAmRYHe8FjyzokNd-1
