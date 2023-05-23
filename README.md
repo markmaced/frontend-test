@@ -1,5 +1,5 @@
 
-# ✏️ Teste Front End 
+# ⚡ Teste Front End 
 
 Olá! Se você está vendo este repositório, provavelmente está participando do processo seletivo da Blocks. 🧱
 
@@ -56,6 +56,7 @@ https://www.figma.com/file/xUT0pnECiRfxxaHGj1yaqh/%5BBLOCKS%5D-%5BTESTE-FRONT-EN
 
 Por favor, não faça alterações no design, pois isso será avaliado. 😉
 
+⚡ Ao concluir o teste, é necessário enviar o código para o GitHub e entrar em contato conosco para que possamos realizar a análise.
 
 ##
 # 🖼️ Imagens
