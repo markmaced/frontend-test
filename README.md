@@ -25,7 +25,7 @@ Parâmetros:
 
 - take (utilizado para definir quantas famílias são obtidas da API)
 ##
-# 📎 Exemplos
+# 📎 API - Exemplos
 
 Quero obter 10 famílias da API:
 
