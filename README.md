@@ -1,7 +1,7 @@
 
 # ⚡ Teste Front End 
 
-Olá! Se você está vendo este repositório, provavelmente está participando do processo seletivo da Blocks. 🧱
+Olá! Se você está vendo este repositório, provavelmente está participando do processo seletivo da Blocks. 🚀
 
 Este teste é bastante simples, não é tão desafiador, mas iremos analisar principalmente os detalhes e sua habilidade em replicar um design fornecido pela equipe de Design! Vamos lá!? 💪
 
@@ -48,8 +48,15 @@ Exemplo utilzando a API pública:
 ##
 # 📜 Como será o teste?
 
-Queremos que você crie um catálogo de famílias (blocos 3D), onde a paginação seja do tipo "scroll loading" (como no Instagram, Facebook, etc.). O design será fornecido por nós, e aqui está o link para o Figma: 🎨
+Queremos que você crie um catálogo de famílias (blocos 3D), onde a paginação seja do tipo "scroll loading" (como no Instagram, Facebook, etc.). O design será fornecido por nós
 
+📃 Não importa o framework!
+
+📃 É permitido utilizar plugins/pacotes para facilitar o scroll loading
+
+📃 É permitido utilizar uma biblioteca de componentes como Material UI ou Tailwind
+
+Link para o Figma: 🎨
 
 https://www.figma.com/file/xUT0pnECiRfxxaHGj1yaqh/%5BBLOCKS%5D-%5BTESTE-FRONT-END%5D?type=design&node-id=0%3A1&t=SAmRYHe8FjyzokNd-1
 
