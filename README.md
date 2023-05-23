@@ -54,3 +54,17 @@ https://www.figma.com/file/xUT0pnECiRfxxaHGj1yaqh/%5BBLOCKS%5D-%5BTESTE-FRONT-EN
 
 
 Por favor, não faça alterações no design, pois isso será avaliado. 😉
+
+
+##
+# 🖼️ Imagens
+
+Para utilizar as imagens em seu catálogo, você pode utilizar nosso banco de imagens. É muito simples de usá-lo!
+
+Primeiramente, utilize o seguinte link:
+
+https://plugin-storage.nyc3.digitaloceanspaces.com/families/images/ID DA FAMÍLIA.jpg
+
+Por exemplo, se o ID da família for "abc-123", o link seria:
+
+https://plugin-storage.nyc3.digitaloceanspaces.com/families/images/abc-123.jpg
