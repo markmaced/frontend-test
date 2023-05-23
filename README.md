@@ -10,7 +10,7 @@ Um termo muito utilizado em nosso ambiente de trabalho é "Famílias". Não, nã
 No mundo da arquitetura ou, mais especificamente, no Revit, o termo "Famílias" é usado para se referir a um modelo 3D. Ou seja, uma Cadeira é uma Família, uma Mesa é uma Família! Entendido? 🪑
 
 
-# 📎 API
+# 🌐 API
 
 Preparamos uma API bem simples e bastante realista em relação ao que trabalhamos atualmente. Caso você não consiga usar a API, poderá baixar este repositório e executar o servidor localmente em sua própria máquina usando o comando:
 
