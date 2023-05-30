@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
-import loading from '../../public/resources/json/98288-loading.json'
 
 interface CardData {
   id: string;
@@ -77,10 +76,7 @@ class Catalogo extends Component {
             <h2 className='font-sans text-black font-bold text-3xl relative'>
               Catálogo
               <div
-                className='w-9 h-1 rounded-md'
-                style={{
-                  background: 'linear-gradient(90deg, rgba(161, 28, 243, 0.6) 0%, rgba(216, 53, 197, 0.6) 100%)',
-                }}
+                className='w-9 h-1 rounded-md bg-gradient-to-r from-custom-border-purple to-custom-border-pink'
               ></div>
             </h2>
           </div>
@@ -130,7 +126,7 @@ class Catalogo extends Component {
                 </div>
               ))}
             </div>
-            {isLoading && <p>Loading more cards...</p>}
+            {isLoading && <p>Carregando mais famílias...</p>}
           </div>
         </div>
       </div>

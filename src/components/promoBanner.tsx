@@ -72,13 +72,7 @@ class PromoBanner extends Component<{}, PromoBannerState> {
             Não limite sua criatividade, junte-se à família Blocks por apenas
             <span className="font-bold"> BRL 19,99</span>
           </span>
-          <button
-            className="py-2 px-4 backdrop-blur-lg text-white flex gap-4 items-center rounded-lg hover:bg-white"
-            style={{
-              background:
-                'linear-gradient(90deg, rgba(161, 28, 243, 0.6) 0%, rgba(216, 53, 197, 0.6) 100%)',
-            }}
-          >
+          <button className="relative py-2 px-4 bg-gradient-to-r from-custom-purple to-custom-pink text-white flex gap-4 items-center rounded-lg hover:bg-gradient-to-tr hover:from-custom-pink-hover hover:border-2 hover:border-custom-purple">
             Quero ser premium
             <svg
               width="16"

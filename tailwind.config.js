@@ -12,6 +12,13 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'custom-purple': '#A11CF399',
+        'custom-pink': '#D835C599',
+        'custom-pink-hover': '#DFACFF10',
+        'custom-border-purple': '#A11CF3',
+        'custom-border-pink': '#D835C5'
+      },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
       },
