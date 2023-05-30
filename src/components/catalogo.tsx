@@ -16,20 +16,11 @@ class Catalogo extends Component {
     cards: [] as CardData[],
     cardsPerPage: 10,
     loadedCards: 0,
+    isLoading: false,
   };
 
   componentDidMount() {
-    const { cardsPerPage } = this.state;
-
-    axios
-      .get(`https://test-candidaturas-front-end.onrender.com/families?skip=0&take=${cardsPerPage}`)
-      .then(response => {
-        this.setState({ cards: response.data, loadedCards: response.data.length });
-      })
-      .catch(error => {
-        console.error('Error fetching cards:', error);
-      });
-
+    this.loadCards();
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -37,52 +28,58 @@ class Catalogo extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  loadMoreCards = () => {
-    const { cards, cardsPerPage, loadedCards } = this.state;
+  loadCards = () => {
+    const { cardsPerPage, loadedCards } = this.state;
     const nextSkip = loadedCards;
+
+    this.setState({ isLoading: true });
 
     axios
       .get(`https://test-candidaturas-front-end.onrender.com/families?skip=${nextSkip}&take=${cardsPerPage}`)
       .then(response => {
+        const { cards } = this.state;
         const newCards = [...cards, ...response.data];
-        this.setState({ cards: newCards, loadedCards: newCards.length });
+        this.setState({ cards: newCards, loadedCards: newCards.length, isLoading: false });
       })
       .catch(error => {
         console.error('Error fetching cards:', error);
+        this.setState({ isLoading: false });
       });
   };
 
   handleScroll = () => {
-    const { cards, loadedCards } = this.state;
+    const { isLoading } = this.state;
     const scrollHeight = document.documentElement.scrollHeight;
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const clientHeight = document.documentElement.clientHeight;
 
-    if (scrollTop + clientHeight >= scrollHeight && cards.length === loadedCards) {
-      this.loadMoreCards();
+    if (!isLoading && scrollTop + clientHeight >= scrollHeight) {
+      this.loadCards();
     }
   };
 
   render() {
-    const { cards, loadedCards } = this.state;
-    const isLoading = cards.length !== loadedCards;
+    const { cards, isLoading } = this.state;
     const imageBaseUrl = 'https://plugin-storage.nyc3.digitaloceanspaces.com/families/images/';
     const extension = '.jpg';
 
     return (
       <div className='catalogo mb-10'>
         <div className='w-full border-t-2 border-purple-300 shadow-md px-3 sm:px-0'>
-          <div className='container py-7 mx-auto'>
+          <div className='container max-w-7xl py-7 mx-auto'>
             <h2 className='font-sans text-black font-bold text-3xl relative'>
               Catálogo
               <div
-                className='w-9 h-1 rounded-md bg-gradient-to-r from-custom-border-purple to-custom-border-pink'
+                className='w-9 h-1 rounded-md'
+                style={{
+                  background: 'linear-gradient(90deg, rgba(161, 28, 243, 0.6) 0%, rgba(216, 53, 197, 0.6) 100%)',
+                }}
               ></div>
             </h2>
           </div>
         </div>
         <div className='w-full'>
-          <div className='container mx-auto py-8 px-3 sm:px-0'>
+          <div className='container max-w-7xl mx-auto py-8 px-3 sm:px-0'>
             <h2 className='font-sans text-black font-semibold text-3xl relative mb-5'>Resultados</h2>
             <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-4'>
               {cards.map(card => (
