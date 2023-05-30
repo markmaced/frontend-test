@@ -99,6 +99,7 @@ class Catalogo extends Component {
                         width={200}
                         height={200}
                         className='h-40 sm:h-56 object-cover'
+                        unoptimized
                       />
                     </div>
                     <div className='w-full border-t-2 p-2'>
