@@ -18,3 +18,9 @@ Siga as etapas abaixo para executar o projeto em sua máquina:
 - Execute o comando npm install ou yarn install para instalar todas as dependências do projeto.
 - Execute o comando npm run dev ou yarn dev para iniciar o servidor de desenvolvimento do Next.js.
 - Acesse a aplicação no seu navegador através do URL http://localhost:3000.
+
+## Deploy
+
+O projeto foi implantado e está disponível para visualização no seguinte link: [https://desafio.zpixel.com.br/](https://desafio.zpixel.com.br/)
+
+Para acessar o projeto implantado, basta clicar no link acima.
